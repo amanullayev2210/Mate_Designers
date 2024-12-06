@@ -138,7 +138,7 @@ body {
   }
 
   .hero__tittle {
-    padding-left: 44px;
+    padding-inline: 44px;
     font-size: 40px;
     line-height: 42px;
   }
@@ -190,7 +190,7 @@ body {
 
   .card__wrapper  {
     margin-top: 94px;
-    padding-left: 20px;
+    padding-inline: 20px;
   }
 
   .card__list {
