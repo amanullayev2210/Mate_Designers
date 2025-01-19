@@ -1,24 +1,4 @@
-/* inter-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-weight: 400;
-  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* inter-500 - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-weight: 500;
-  src: url('../fonts/inter-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* inter-600 - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-weight: 600;
-  src: url('../fonts/inter-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
 *,
@@ -29,8 +9,7 @@
 
 body {
   margin: 0;
-  font-family: "Inter";
-  font-weight: 500;
+  font-family: "Inter", serif;
   overflow-x: hidden;
 }
 
@@ -75,73 +54,59 @@ body {
 
 .sitenav__item {
   font-size: 18px;
-  line-height: 21.48px;
+  font-weight: 500;
+  line-height: 21.78px;
   color: #FFFFFF;
+}
 
+.sitenav-item__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.sitenav-item__link:hover {
+  color: #F78B3B;
+}
+
+.sitenav-item__link:active {
+  color: #F78B3BCC;
 }
 
 .open .sitenav {
   display: block;
 }
 
-@media only screen and (max-width: 425px) {
-  .js-btn {
-    display: block;
-    color: #FFF;
-    font-size: 26px;
-  }
-  .sitenav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #282829;
-    display: none;
-  }
-
-  .sitenav__list {
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-  }
-
-  .site-header__icons {
-    display: none;
-  }
-}
 
 /* Header end */
 /* Main start */
 
 /* hero start */
 
+.hero {
+  background-image: url("/imgs/beautiful-emerald-lake-yoho-national-park-british-columbia-canada_131985-177\ 1.png");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 420px;
+  background-position: center;
+  /* background-size: cover; */
+}
+
 .hero__wrapper {
   margin-top: 114px;
+  padding-top: 117px;
 }
 
 .hero__tittle {
   margin-block: 0;
+  margin: 0 auto;
+  font-family: "Inter", serif;
+  font-weight: unset;
+  max-width: 743px;
+  width: 100%;
   font-size: 88px;
   line-height: 93px;
+  color: #FFFFFF;
   text-align: center;
-  color: #000000;
-}
-
-
-@media only screen and (max-width: 425px) {
-  
-  .hero__wrapper {
-    display: block;
-    margin-top: 94px;
-    max-width: 377px;
-    width: 100%;
-  }
-
-  .hero__tittle {
-    padding-left: 34px;
-    font-size: 40px;
-    line-height: 42px;
-  }
 }
 
 
@@ -150,7 +115,7 @@ body {
 
 .card__wrapper {
   display: flex;
-  margin-block: 114px;
+  margin-top: 114px;
 }
 
 .card__list {
@@ -178,6 +143,8 @@ body {
 
 
 .card__text {
+  max-width: 393px;
+  width: 100%;
   font-weight: 400;
   margin-block: 10px 60px;
   font-size: 14px;
@@ -186,20 +153,201 @@ body {
   text-align: justify;
 }
 
-@media only screen and (max-width: 425px) {
+/* card end */
+/* about start */
+
+.about__wrapper {
+  margin-top: 75px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.text__wrapper {
+  margin-top: 43px;
+  margin-bottom: 75px;
+}
+
+.about__time {
+  margin-block: 0;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  text-align: center;
+}
+
+.about__tittle {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-family: "Open Sans", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  color: #000000;
+  text-align: center;
+}
+
+.about__text {
+  margin-block: 0;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  text-align: center;
+}
+
+/* about end */
+/* Main end */
+
+/* footert start */
+
+.footer {
+  background-color: #282829;
+}
+
+.footer__wrapper {
+  padding-block: 81px;
+}
+
+.footer__list {
+  margin-block: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.footer__item {
+  max-width: 45px;
+  width: 100%;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19.36px;
+  color: #FFFFFF;
+}
+
+.footer__link:hover {
+  color: #FF0000;
+}
+
+.footer__link:active {
+  color: #FF0000CC;
+}
+
+.footer-icons__wrapper {
+  margin: 0 auto;
+  margin-block: 27px;
+  max-width: 91px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer__text {
+  margin-block: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* footer end */
+
+
+/* Responsive start */
+
+@media only screen and (max-width: 768px) {
+  /* Card start */
+   .card__list {
+    justify-content: center;
+    align-items: center;
+   }
+
+   .card__img {
+    max-width: 100%;
+   }
+   /* card end */
+}
+
+@media only screen and (max-width: 616px) {
+  /* hero start */
+  .hero__tittle {
+    font-size: 75px;
+    line-height: 88px;
+  }
+  /* hero end */
+  /* footer start */
+  .footer__list {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer__item {
+    text-align: center;
+  }
+  /* footer end */
+}
+
+@media only screen and (max-width: 544px) {
+  /* header start */
+  .js-btn {
+    display: block;
+    color: #FFF;
+    font-size: 26px;
+  }
+  .sitenav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #282829;
+    display: none;
+  }
+
+  .sitenav__list {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .sitenav__item {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .site-header__icons {
+    display: none;
+  }
+  /* header end */
+  /* hero start */
+  .hero__wrapper {
+    margin-top: 94px;
+  }
+
+  .hero__tittle {
+    font-size: 58px;
+    line-height: 75px;
+  }
+  /* hero end */
+  /* card start */
+  .card__text {
+    text-align: center;
+  }
 
   .card__wrapper  {
     margin-top: 94px;
-    padding-left: 20px;
-  }
-
-  .card__list {
-    flex-direction: column;
-  }
-
-  .card__img {
-    max-width: 340px;
-    width: 100%;
   }
 
   .card__tittle {
@@ -211,7 +359,33 @@ body {
     font-size: 12px;
     line-height: 20px;
   }
+  /* card end */
+  /* about start */
+  .about__tittle {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  /* about end */
+  /* footert start */
+  .footer__wrapper {
+    padding-block: 60px;
+  }
+  .footer__list {
+    gap: 35px;
+  }
+  /* footer end */
 }
 
-/* card end */
-/* Main end */
+@media only screen and (max-width: 390px) {
+  /* hero start */
+  .hero__tittle {
+    font-size: 46px;
+    line-height: 62px;
+  }
+  /* hero end */
+}
