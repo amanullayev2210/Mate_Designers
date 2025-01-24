@@ -43,6 +43,10 @@ body {
   display: none;
 }
 
+.close {
+  display: none;
+}
+
 .sitenav__list {
   margin-block: 0;
   padding-left: 0;
@@ -224,7 +228,7 @@ body {
 }
 
 .footer__item {
-  max-width: 45px;
+  max-width: 76px;
   width: 100%;
 }
 
@@ -269,6 +273,11 @@ body {
 /* Responsive start */
 
 @media only screen and (max-width: 768px) {
+  /* hero start */
+  .hero {
+    max-width: 100%;
+  }
+  /* hero end */
   /* Card start */
    .card__list {
     justify-content: center;
@@ -283,6 +292,9 @@ body {
 
 @media only screen and (max-width: 616px) {
   /* hero start */
+  .hero {
+    max-width: 100%;
+  }
   .hero__tittle {
     font-size: 75px;
     line-height: 88px;
@@ -301,6 +313,12 @@ body {
 }
 
 @media only screen and (max-width: 544px) {
+  /* hero start */
+  .hero {
+    max-width: 100%;
+  }
+  /* hero end */
+
   /* header start */
   .js-btn {
     display: block;
@@ -383,6 +401,10 @@ body {
 
 @media only screen and (max-width: 390px) {
   /* hero start */
+  .hero {
+    max-width: 100%;
+  }
+
   .hero__tittle {
     font-size: 46px;
     line-height: 62px;
